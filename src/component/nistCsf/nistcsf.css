@@ -1,0 +1,63 @@
+.nist-container{
+   display: flex;
+   flex-grow: 1;
+   flex-direction: column;
+}
+.nist-header{
+    min-height: 47px;
+font-style: normal;
+font-weight: 700;
+line-height: normal
+}
+.nist-header p{
+    margin: 25px;
+}
+.vendor-runbook-container{
+    margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 10px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.18px;
+font-family: sans-serif;
+
+}
+.vendor-runbook{
+    width: 148px;
+height: auto;
+flex-shrink: 0;
+border-radius: 15px;
+}
+.nist-card-container{
+    margin: 25px 0px 25px 25px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+.nist-card{
+    width: 47%;
+    border: none;
+    /* color: white; */
+box-shadow: 0px 4px 19px 0px #000;
+}
+.nist-card-container .ant-card-head{
+    border-bottom: 1px solid #626060;
+
+}
+.summary-category{
+    text-align: center;
+    width: 72px;
+height: 24px;
+box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.75);
+border-radius: 10px;
+}
+
+@media ( max-width : 1200px) {
+    .nist-card{
+        width: 96%;
+    }
+}

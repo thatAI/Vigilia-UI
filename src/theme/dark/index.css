@@ -1,0 +1,56 @@
+.bg-primary{
+background-color: #333;
+}
+.bg-secondary{
+  background-color: #282525!important;
+}
+.font-primary{
+  color: #FBC001;
+}
+.font-secondary{
+  color : #fff;
+}
+.font-default{
+  color : #fff;
+}
+.btn-primary{
+    background-color: #FBC001;
+    color: white;
+}
+.btn-secondary{
+    background-color: blue;
+}
+.border-primary{
+  border: 1px solid #FBC001;
+}
+.sider-primary{
+ 
+  background-color: #282525!important;
+}
+.category-options-Identify {
+    
+      background-color: #8BA1EC;
+      border:  1px solid #0886FB;
+      color: #102778;
+    }
+  .category-options-Protect {
+      background-color: #EB8AEB;
+      border:  1px solid #800080;
+      color: #800080;
+    }
+    .category-options-Detect {
+      background-color: #E1AD01;
+      border:  1px solid #E1AD01;
+      color:  #5B480A;
+    }
+    .category-options-Respond {
+      background-color: #FF7417;
+      border:  1px solid #FF7417;
+      color:  #5F2C0A;
+    }
+    .category-options-Recover {
+      background-color: #0CC96E;
+      border:  1px solid #06C55E;
+      color:  #07592D;
+    }
+  

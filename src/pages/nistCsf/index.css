@@ -1,0 +1,30 @@
+/* .total-runbook{
+    height: auto;
+    padding : 10px;
+    
+}
+.total-runbook-15{
+    color: #FBC001;
+    font-family: Roboto;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+.total-runbook-text{
+color: #C2C0C0;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;} */
+.content{
+    min-height : 90vh;
+    text-align: center;
+}
+.sider{
+    text-align: center;
+    height: auto;
+}
