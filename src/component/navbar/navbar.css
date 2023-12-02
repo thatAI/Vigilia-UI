@@ -21,3 +21,6 @@ height: 61px;
 .navbar-userdata:hover{
     cursor: pointer;
 }
+.navbar-userdata svg{
+    margin-top: 9px;
+}
