@@ -76,19 +76,19 @@ const RunbookStore = () => {
       <Row className="runbookStore-card-container">
         <Card className="runbookStoreCard">
           <p className="text-3xl">90</p>
-          <p className="text-xl">Runbooks in store</p>
+          <p className="text-lh">Runbooks in store</p>
         </Card>
         <Card className="runbookStoreCard">
           <p className="text-3xl" style={{ color: "red" }}>
             166
           </p>
-          <p className="text-xl">Common Vulnerabilities and Exposures</p>
+          <p className="text-lh">Common Vulnerabilities and Exposures</p>
         </Card>
       </Row>
       <Row className="p-2 mt-2 import-search-container">
         <div style={{ gap: "20px", display: "flex" }}>
           <Button type="primary" className="btn-primary ">
-            <p className="text-sm"> IMPORT</p>
+            <p className="text-sm"> Import</p>
           </Button>
           <Input
             className="search-runbooks"

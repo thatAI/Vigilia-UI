@@ -4,6 +4,7 @@
     flex-direction: column;
     flex-grow: 1;
     gap: 20px;
+    min-height: 100vh;
 }
 .sider-child-div{
     display: flex;

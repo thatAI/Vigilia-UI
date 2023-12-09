@@ -60,7 +60,7 @@ module.exports = {
       base: "18px",
       xl: "20px",
       "2xl": "32px",
-      "3xl": "60px",
+      "3xl": "30px",
     },
     extend: {
       spacing: {
