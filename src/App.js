@@ -1,7 +1,7 @@
 
 import './App.css';
 import RoutesHandler from './route';
-import   "../src/theme/dark/index.css"; 
+import   "../src/theme/light/index.css"; 
 
 
 function App() {

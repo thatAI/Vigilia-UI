@@ -1,0 +1,43 @@
+.runbook-container{
+    margin: 25px;
+}
+.runbookStore-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.runbookStoreCard {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 285px;
+  font-weight: 700;
+}
+.runbookStoreCard .ant-card-body {
+  padding: 10px !important;
+}
+.import-search-container {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+.search-runbooks .ant-input{
+    font-weight: 700!important;
+}
+.runbookStore-data-header {
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+.runbookStore-data-body {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+.runbook-table .ant-table-thead th {
+  background-color: #eeeff1 !important;
+}
+@media (max-width: 850px) {
+   
+  .import-search-container {
+    
+    gap: 10px;
+  }
+}

@@ -1,63 +1,72 @@
-.nist-container{
-   display: flex;
-   flex-grow: 1;
-   flex-direction: column;
+.nist-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
-.nist-header{
-    min-height: 47px;
-font-style: normal;
-font-weight: 700;
-line-height: normal
+.nist-header {
+  min-height: 47px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.nist-header p{
-    margin: 25px;
+.nist-header p {
+  margin: 25px;
 }
-.vendor-runbook-container{
-    margin-left: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    gap: 10px;
-font-style: normal;
-font-weight: 400;
-letter-spacing: 0.18px;
-font-family: sans-serif;
-
+.vendor-runbook-container {
+  margin-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  font-family: sans-serif;
 }
-.vendor-runbook{
-    width: 148px;
-height: auto;
-flex-shrink: 0;
-border-radius: 15px;
+.vendor-runbook {
+  /* width: 148px; */
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-shrink: 0;
+  border-radius: 15px;
 }
-.nist-card-container{
-    margin: 25px 0px 25px 25px;
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    gap: 40px;
-    
+.nist-card-container {
+  margin: 25px 0px 25px 25px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-.nist-card{
-    width: 47%;
-    border: none;
-    /* color: white; */
-box-shadow: 0px 4px 19px 0px #000;
+.nist-card {
+  width: 47%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
-.nist-card-container .ant-card-head{
-    border-bottom: 1px solid #626060;
-
+.nist-card-container .ant-card-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #eeeff1;
 }
-.summary-category{
-    text-align: center;
-    width: 72px;
-height: 24px;
-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.75);
-border-radius: 10px;
+.summary-category {
+  display: flex;
+  text-align: center;
+  width: 80px;
+  height: 27px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
-
-@media ( max-width : 1200px) {
-    .nist-card{
-        width: 96%;
-    }
+@media (max-width: 820px) {
+  .nist-card {
+    width: 96%;
+  }
+  .nist-header p {
+    margin: 10px;
+  }
+  .vendor-runbook-container {
+    margin-left: 10px;
+  }
+  .nist-card-container {
+    margin: 25px 0px 25px 10px;
+  }
 }
