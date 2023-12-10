@@ -16,7 +16,7 @@ const RunbookStore = () => {
       key: "version",
     },
     {
-      title: "Cves ",
+      title: "CVEs ",
       dataIndex: "cves",
       key: "address",
     },
@@ -31,12 +31,12 @@ const RunbookStore = () => {
       key: "nist_csf_policies",
     },
     {
-      title: "NIST CSF Sub-Categories",
+      title: "NIST CSF Subcategories",
       dataIndex: "nist_csf_sub_categories",
       key: "nist_csf_sub_categories",
     },
     {
-      title: "NIST 800-53 controls",
+      title: "NIST 800-53 Controls",
       dataIndex: "nist_800_controls",
       key: "nist_800_controls",
     },
@@ -73,6 +73,9 @@ const RunbookStore = () => {
   );
   return (
     <div className="runbook-container">
+       <Row className="bg-priamry font-primary runbook-header">
+        <p className="text-xl md:text-md">Runbook Store</p>
+      </Row>
       <Row className="runbookStore-card-container">
         <Card className="runbookStoreCard">
           <p className="text-3xl">90</p>
@@ -85,6 +88,7 @@ const RunbookStore = () => {
           <p className="text-lh">Common Vulnerabilities and Exposures</p>
         </Card>
       </Row>
+      
       <Row className="p-2 mt-2 import-search-container">
         <div style={{ gap: "20px", display: "flex" }}>
           <Button type="primary" className="btn-primary ">
@@ -103,12 +107,12 @@ const RunbookStore = () => {
         </Dropdown>
       </Row>
       <Table
-        className="mt-5 runbook-table"
+        className="mt-2 runbook-table"
         dataSource={RUNBOOK_STORE_DATA}
         columns={columns}
         scroll={{ x: true }}
       />
-      ;
+      
     </div>
   );
 };

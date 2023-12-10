@@ -1,5 +1,13 @@
 .runbook-container{
     margin: 25px;
+    margin-top: 10px;
+}
+.runbook-header{
+  min-height: 47px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
 }
 .runbookStore-card-container {
   display: flex;
@@ -7,7 +15,7 @@
   gap: 20px;
 }
 .runbookStoreCard {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 235px;
   font-weight: 700;
 }
@@ -15,7 +23,9 @@
   padding: 10px !important;
 }
 .import-search-container {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  padding: 0px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -36,10 +46,19 @@
   display: flex;
 }
 .runbook-table .ant-table-thead th {
-  background-color: #eeeff1 !important;
+  background-color: #f9f9f9 !important;
+}
+.runbook-table{
+ padding-top: 5px;
+}
+.runbook-table .ant-table-cell {
+  font-size: 12px!important;
+  font-family: sans-serif;
 }
 @media (max-width: 850px) {
-   
+  .runbookStore-card-container {
+  justify-content: center;
+  }
   .import-search-container {
     
     gap: 10px;

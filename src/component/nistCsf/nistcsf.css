@@ -11,6 +11,7 @@
 }
 .nist-header p {
   margin: 25px;
+  margin-top: 10px;
 }
 .vendor-runbook-container {
   margin-left: 25px;
@@ -40,11 +41,11 @@
 }
 .nist-card {
   width: 47%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .nist-card-container .ant-card-head {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: #eeeff1;
+  background-color: #f9f9f9;
 }
 .summary-category {
   display: flex;
