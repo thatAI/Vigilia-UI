@@ -15,11 +15,12 @@ const RoutesHandler = () => {
   return (
     <Router>
       <Routes>
-      <Route path="/runbook" element={<Dashboard userdata = {userData}/>} />
+      <Route path="/runbook" element={<Dashboard userdata = {userDataAdmin}/>} />
+      <Route path="/myrunbook" element={<Runbook userdata = {userDataAdmin}/>} />
         <Route path="/nist_csf" element={<NIST_CSF userdata = {userDataCiso}/>} />
-        <Route path="/" element={<Runbook userdata = {userDataAdmin}/>} />
         <Route path="/cves" element={<Cves userdata = {userDataCiso}/>} />
         <Route path="/policy" element={<Policy userdata = {userDataCiso}/>} />
+        <Route path="/" element={<Runbook userdata = {userDataAdmin}/>} />
       </Routes>
     </Router>
   );
