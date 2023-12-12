@@ -4,6 +4,7 @@
     flex-direction: column;
     flex-grow: 1;
     gap: 20px;
+    min-height: 100vh;
 }
 .sider-child-div{
     display: flex;
@@ -14,7 +15,7 @@ padding: 0px 7.508px;
 align-items: center;
 flex-shrink: 0;
 border-radius: 3.754px;
-background: rgba(0, 0, 0, 0.20);
+
 
 
 
@@ -26,7 +27,4 @@ letter-spacing: 0.15px;
 }
 .sider-child-div:hover{
     cursor: pointer;
-}
-.active{
-    border-bottom: 3px solid #FBC001; ;
 }

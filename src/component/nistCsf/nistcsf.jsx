@@ -1,20 +1,20 @@
-import {   Card, Col, Row } from "antd";
+import { Card, Col, Row } from "antd";
 import React from "react";
 import "./nistcsf.css";
 import { NIST_MOCK_DATA } from "../../mockdata/mockJson";
-import {getColorByRange} from "../../utils"
+import { getColorByRange } from "../../utils";
 const Nistcsf = () => {
   return (
     <Row className="nist-container">
       <Row className="bg-priamry font-primary nist-header">
-        <p className="text-2xl md:text-xl">NIST Cybersecurity Framework</p>
+        <p className="text-xl md:text-md">NIST Cybersecurity Framework</p>
       </Row>
       <Row className="vendor-runbook-container">
         <div className="vendor-runbook p-1 border-primary text-base font-secondary">
-        <p>Vendor: AWS</p>
+          <p className="text-sm">Vendor: AWS</p>
         </div>
         <div className="vendor-runbook p-1 border-primary text-base font-secondary">
-        <p>Runbook: 4 </p>
+          <p className="text-sm">Runbook: 4 </p>
         </div>
       </Row>
       <Row className="nist-card-container">
@@ -23,38 +23,76 @@ const Nistcsf = () => {
             key={index}
             title={
               <Row className="font-secondary">
-                <Col span={12} align="left" className="mt-1">
+                <Col
+                  xl={12}
+                  lg={12}
+                  md={8}
+                  xs={8}
+                  sm={8}
+                  align="left"
+                  className=""
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <p
                     className={`summary-category category-options-${data.summary.category}`}
                   >
                     {data.summary.category}
                   </p>
                 </Col>
-                <Col span={12}>
+                <Col xl={12} lg={12} md={16} xs={16} sm={16}>
                   <Row>
                     <Col span={8}>
-                      <p>{data.summary.policies}</p>
-                      <span>Policies</span>
-                    </Col>
-                    <Col span={8}>
-                      <p>{data.summary.runbooks} </p>
-                      <span>Runbooks</span>
-                    </Col>
-                    <Col span={8}>
-                      <p
+                      <div
                         style={{
-                          color: getColorByRange(data.summary.compilance),
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "0px",
+                          flexDirection: "column",
                         }}
                       >
-                        {data.summary.compilance}%{" "}
-                      </p>
-                      <span
+                        <p className="text-sm">{data.summary.policies}</p>
+                        <span className="text-sm md:text-xs">Policies</span>
+                      </div>
+                    </Col>
+                    <Col span={8}>
+                      <div
                         style={{
-                          color: getColorByRange(data.summary.compilance),
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "0px",
+                          flexDirection: "column",
                         }}
                       >
-                        Compilances
-                      </span>
+                        <p className="text-sm">{data.summary.runbooks} </p>
+                        <span className="text-sm md:text-xs">Runbooks</span>
+                      </div>
+                    </Col>
+                    <Col span={8}>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginTop: "0px",
+                          flexDirection: "column",
+                        }}
+                      >
+                        <p
+                          className="text-sm"
+                          style={{
+                            color: getColorByRange(data.summary.compilance),
+                          }}
+                        >
+                          {data.summary.compilance}%{" "}
+                        </p>
+                        <span
+                          style={{
+                            color: getColorByRange(data.summary.compilance),
+                          }}
+                          className="text-sm md:text-xs"
+                        >
+                          Compliance
+                        </span>
+                      </div>
                     </Col>
                   </Row>
                 </Col>
@@ -64,19 +102,22 @@ const Nistcsf = () => {
           >
             {data?.categories.map((data, index) => (
               <Row key={index} className="font-default p-1">
-                <Col span={12} align="left">
-                  <p>{data.category}</p>
+                <Col xl={12} lg={12} md={8} xs={8} sm={8} align="left">
+                  <p className="text-sm">{data.category}</p>
                 </Col>
-                <Col span={12}>
+                <Col xl={12} lg={12} md={16} xs={16} sm={16}>
                   <Row>
                     <Col span={8}>
-                      <p>{data.policy} </p>
+                      <p className="text-sm">{data.policy} </p>
                     </Col>
                     <Col span={8}>
-                      <p>{data.runbook} </p>
+                      <p className="text-sm">{data.runbook} </p>
                     </Col>
                     <Col span={8}>
-                      <p style={{ color: getColorByRange(data?.compilance) }}>
+                      <p
+                        className="text-sm"
+                        style={{ color: getColorByRange(data?.compilance) }}
+                      >
                         {data?.compilance === 0 ? "NA" : `${data?.compilance}%`}{" "}
                       </p>
                     </Col>
@@ -87,7 +128,6 @@ const Nistcsf = () => {
           </Card>
         ))}
       </Row>
-    
     </Row>
   );
 };

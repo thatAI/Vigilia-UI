@@ -1,56 +1,72 @@
-.bg-primary{
-    background-color: white;
-    }
-    .bg-secondary{
-      background-color: #001529!important;
-    }
-    .font-primary{
-      color: #001529
-    }
-    .font-secondary{
-      color : #001529;
-    }
-    .font-default{
-        color : #fff;
-    }
-    .btn-primary{
-        background-color: #FBC001;
-        color: white;
-    }
-    .btn-secondary{
-        background-color: blue;
-    }
-    .border-primary{
-      border: 1px solid #001529;
-    }
-    .sider-primary{
-     
-      background-color: #001529!important;
-    }
-    .category-options-Identify {
-        
-          background-color: #8BA1EC;
-          border:  1px solid #0886FB;
-          color: #102778;
-        }
-      .category-options-Protect {
-          background-color: #EB8AEB;
-          border:  1px solid #800080;
-          color: #800080;
-        }
-        .category-options-Detect {
-          background-color: #E1AD01;
-          border:  1px solid #E1AD01;
-          color:  #5B480A;
-        }
-        .category-options-Respond {
-          background-color: #FF7417;
-          border:  1px solid #FF7417;
-          color:  #5F2C0A;
-        }
-        .category-options-Recover {
-          background-color: #0CC96E;
-          border:  1px solid #06C55E;
-          color:  #07592D;
-        }
-      
+.bg-primary {
+  background-color: white;
+}
+.bg-navbar {
+  background-color: white;
+}
+.bg-secondary {
+  background-color: white !important;
+}
+.font-primary {
+  color: #027ea0;
+}
+.font-secondary {
+  color: #001529;
+}
+.font-default {
+  color: #000;
+  fill: #000;
+}
+.btn-primary {
+  background-color: #027ea0;
+  color: white;
+}
+.btn-secondary {
+  background-color: blue;
+}
+.border-primary {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sider-primary {
+  background-color: white !important;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+}
+.active {
+  border-bottom: 3px solid #027ea0;
+  color: #027ea0;
+  background-color: #def0f5;
+  font-weight: 600;
+}
+.active-icons {
+  
+  fill: #027ea0;
+}
+
+.sider-child-primary:hover {
+  background-color: #def0f5;
+}
+.category-options-Identify {
+  background-color: #d2e2f4;
+  border: 1px solid #006fc5;
+  color: #006fc5;
+}
+.category-options-Protect {
+  background-color: #eadeff;
+  border: 1px solid #9553ff;
+  color: #9553ff;
+}
+.category-options-Detect {
+  background-color: #ffecd4;
+  border: 1px solid #fe9900;
+  color: #fe9900;
+}
+.category-options-Respond {
+  background-color: #ffe1d9;
+  border: 1px solid #fe6637;
+  color: #fe6637;
+}
+.category-options-Recover {
+  background-color: #deefde;
+  border: 1px solid #4eae54;
+  color: #4eae54;
+}

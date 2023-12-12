@@ -13,7 +13,7 @@ module.exports = {
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
 
-      md: { max: "767px" },
+      md: { max: "820px" },
       // => @media (max-width: 767px) { ... }
 
       sm: { max: "639px" },
@@ -53,11 +53,14 @@ module.exports = {
       serif: ["Merriweather", "serif"],
     },
     fontSize: {
-      sm: "10px",
-    md: "15px",
+      xs: "10px",
+      sm: "14px",
+      lh: "14px",
+      md: "15px",                                                     
       base: "18px",
       xl: "20px",
       "2xl": "32px",
+      "3xl": "30px",
     },
     extend: {
       spacing: {
@@ -67,6 +70,9 @@ module.exports = {
         4: "24px",
         5: "32px",
         6: "48px",
+        7: "64px",
+        8:"128px",
+        9:"169px",
       },
       borderWidth: {
         0: "0",
