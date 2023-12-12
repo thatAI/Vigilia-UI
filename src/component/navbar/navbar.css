@@ -10,8 +10,9 @@
 }
 .navbar-logo-image {
   margin: 5px 10px;
-
-  height: 45px;
+/* object-fit: scale-down; */
+  height: 51px;
+  
 }
 .navbar-userdata {
   display: flex;

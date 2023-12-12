@@ -1,0 +1,17 @@
+.content {
+  min-height: 90vh;
+  text-align: center;
+  padding-left: 10px;
+}
+.sider {
+  text-align: center;
+  height: auto;
+}
+@media (max-width: 850px) {
+  .siderVisible {
+    display: block;
+  }
+  .notSiderVisible {
+    display: none;
+  }
+}
