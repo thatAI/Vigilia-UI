@@ -14,21 +14,26 @@
   height: 51px;
   
 }
+
 .navbar-userdata {
   display: flex;
   margin: 10px 20px 0px 0px;
   gap: 10px;
   line-height: normal;
 }
+
 .navbar-userdata:hover {
   cursor: pointer;
 }
+
 .navbar-userdata svg {
   margin-top: 5px;
 }
+
 .hamburger-icon {
   display: none;
 }
+
 @media (max-width: 850px) {
   .hamburger-icon {
     display: block;
