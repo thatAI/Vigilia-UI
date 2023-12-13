@@ -12,16 +12,16 @@ export function getColorByRange(value) {
   }
 }
 
-export function pathname(value) {
-  if (value === "/") {
+export function getUserinfoByPath(currentPath) {
+  if (currentPath === "/") {
     return { name: "Mark Wood", role: "Admin" };
-  } else if (value === "/nist_csf") {
+  } else if (currentPath === "/nist_csf") {
     return { name: "Lisa Audrey", role: "CISO" };
-  } else if (value === "/cves") {
+  } else if (currentPath === "/cves") {
     return { name: "Lisa Audrey", role: "CISO" };
-  } else if (value ==="/policy") {
+  } else if (currentPath ==="/policy") {
     return { name: "Lisa Audrey", role: "CISO" };
-  } else if (value === "/runbook") {
+  } else if (currentPath === "/runbook") {
     return { name: "Ken Williams", role: "Operator" };
   }
 }

@@ -111,6 +111,7 @@ const RunbookStore = () => {
         dataSource={RUNBOOK_STORE_DATA}
         columns={columns}
         scroll={{ x: true }}
+        rowKey={"name"}
       />
       
     </div>
