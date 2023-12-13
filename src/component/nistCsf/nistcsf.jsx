@@ -7,7 +7,7 @@ const Nistcsf = () => {
   return (
     <Row className="nist-container">
       <Row className="bg-priamry font-primary nist-header">
-        <p className="text-xl md:text-md">NIST Cybersecurity Framework</p>
+        <p className="text-xl">NIST Cybersecurity Framework</p>
       </Row>
       <Row className="vendor-runbook-container">
         <div className="vendor-runbook p-1 border-primary text-base font-secondary">

@@ -7,7 +7,7 @@ const Navbar = ({ userdata, hamburgerClicked }) => {
   };
   return (
     <div className="navbar-container bg-navbar">
-      <img src="/vtblue.png" alt="logoImage" className="navbar-logo-image" />
+      <img src="/images/VTI_Logo_Turquoise_v2.png" alt="logoImage" className="navbar-logo-image" />
       <div className="navbar-userdata">
         <div>
           <p className="font-default font-sans text-sm \">{userdata.name}</p>

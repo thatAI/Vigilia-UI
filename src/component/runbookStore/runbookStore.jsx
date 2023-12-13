@@ -74,7 +74,7 @@ const RunbookStore = () => {
   return (
     <div className="runbook-container">
        <Row className="bg-priamry font-primary runbook-header">
-        <p className="text-xl md:text-md">Runbook Store</p>
+        <p className="text-xl font-sans">Runbook Store</p>
       </Row>
       <Row className="runbookStore-card-container">
         <Card className="runbookStoreCard">
