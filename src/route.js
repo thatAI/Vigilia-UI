@@ -1,28 +1,22 @@
-// All Routes will be defined here 
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// All Routes will be defined here
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-import NIST_CSF from './pages/nistCsf';
-import Dashboard from './pages/installRunbook';
-import Runbook from './pages/runbook';
-import Policy from './pages/policy';
-import Cves from './pages/cves';
+import NIST_CSF from "./pages/nistCsf";
+import Dashboard from "./pages/installRunbook";
+import Runbook from "./pages/runbook";
+import Policy from "./pages/policy";
+import Cves from "./pages/cves";
 
 const RoutesHandler = () => {
-  const userData = {name: "Ken Williams", role:"Operator"}
-  const userDataCiso = {name: "Lisa Audrey", role:"CISO"}
-  const userDataAdmin = {name: "Mark Wood", role:"Admin"}
   return (
-    <Router>
-      <Routes>
-      <Route path="/runbook" element={<Dashboard userdata = {userDataAdmin}/>} />
-      <Route path="/myrunbook" element={<Runbook userdata = {userDataAdmin}/>} />
-        <Route path="/nist_csf" element={<NIST_CSF userdata = {userDataCiso}/>} />
-        <Route path="/cves" element={<Cves userdata = {userDataCiso}/>} />
-        <Route path="/policy" element={<Policy userdata = {userDataCiso}/>} />
-        <Route path="/" element={<Runbook userdata = {userDataAdmin}/>} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/runbook" element={<Dashboard />} />
+      <Route path="/nist_csf" element={<NIST_CSF />} />
+      <Route path="/" element={<Runbook />} />
+      <Route path="/cves" element={<Cves />} />
+      <Route path="/policy" element={<Policy />} />
+    </Routes>
   );
 };
 
