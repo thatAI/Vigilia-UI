@@ -7,9 +7,12 @@
   text-align: center;
   height: auto;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .siderVisible {
     display: block;
+    max-width: 100%!important;
+    width: 100%!important;
+    min-width: 100%!important;
   }
   .notSiderVisible {
     display: none;

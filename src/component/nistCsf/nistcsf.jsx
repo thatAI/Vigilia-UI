@@ -24,11 +24,11 @@ const Nistcsf = () => {
             title={
               <Row className="font-secondary">
                 <Col
-                  xl={12}
-                  lg={12}
-                  md={8}
-                  xs={8}
-                  sm={8}
+                  xl={10}
+                  lg={8}
+                  md={6}
+                  xs={6}
+                  sm={6}
                   align="left"
                   className=""
                   style={{ display: "flex", alignItems: "center" }}
@@ -39,7 +39,7 @@ const Nistcsf = () => {
                     {data.summary.category}
                   </p>
                 </Col>
-                <Col xl={12} lg={12} md={16} xs={16} sm={16}>
+                <Col xl={14} lg={16} md={18} xs={18} sm={18}>
                   <Row>
                     <Col span={8}>
                       <div
@@ -51,7 +51,7 @@ const Nistcsf = () => {
                         }}
                       >
                         <p className="text-sm">{data.summary.policies}</p>
-                        <span className="text-sm md:text-xs">Policies</span>
+                        <span className="text-sm lg:text-xs">Policies</span>
                       </div>
                     </Col>
                     <Col span={8}>
@@ -64,7 +64,7 @@ const Nistcsf = () => {
                         }}
                       >
                         <p className="text-sm">{data.summary.runbooks} </p>
-                        <span className="text-sm md:text-xs">Runbooks</span>
+                        <span className="text-sm lg:text-xs">Runbooks</span>
                       </div>
                     </Col>
                     <Col span={8}>
@@ -88,7 +88,7 @@ const Nistcsf = () => {
                           style={{
                             color: getColorByRange(data.summary.compilance),
                           }}
-                          className="text-sm md:text-xs"
+                          className="text-sm lg:text-xs"
                         >
                           Compliance
                         </span>
@@ -102,10 +102,10 @@ const Nistcsf = () => {
           >
             {data?.categories.map((data, index) => (
               <Row key={index} className="font-default p-1">
-                <Col xl={12} lg={12} md={8} xs={8} sm={8} align="left">
-                  <p className="text-sm">{data.category}</p>
+                <Col xl={10} lg={8} md={6} xs={6} sm={6} align="left">
+                  <p className="text-sm  lg:text-xs">{data.category}</p>
                 </Col>
-                <Col xl={12} lg={12} md={16} xs={16} sm={16}>
+                <Col xl={14} lg={16} md={18} xs={18} sm={18}>
                   <Row>
                     <Col span={8}>
                       <p className="text-sm">{data.policy} </p>

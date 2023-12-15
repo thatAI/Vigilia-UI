@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./leftSider.css";
 import { useNavigate } from "react-router-dom";
 
-const LeftSider = () => {
+const LeftSider = ({routeSidebarHandler}) => {
 const navigate = useNavigate();
   const [active, setActive] = useState(window.location.pathname);
   const activeClassHandlder = (activename)=>{
@@ -26,6 +26,7 @@ const navigate = useNavigate();
         break;
     }
     setActive(window.location.pathname)
+    routeSidebarHandler();
   }
   return (
     <div className="sider-parent-div">

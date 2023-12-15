@@ -57,7 +57,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 820px) {
+@media (max-width: 900px) {
   .nist-card {
     width: 96%;
   }

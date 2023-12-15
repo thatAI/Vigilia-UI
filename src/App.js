@@ -14,6 +14,9 @@ function App() {
   const hamburgerClicked = () => {
     setisLeftSiderHidden(!isLeftSiderHidden);
   };
+  const routeSidebarHandler = ()=>{
+    setisLeftSiderHidden(false)
+  }
   return (
     <div className="App">
       <Router>
@@ -25,7 +28,7 @@ function App() {
                 isLeftSiderHidden ? "siderVisible" : "notSiderVisible"
               }`}
             >
-              <LeftSider />
+              <LeftSider routeSidebarHandler={routeSidebarHandler} />
             </Sider>
             <Content className="bg-primary content">
               <RoutesHandler />

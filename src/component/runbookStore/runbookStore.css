@@ -55,7 +55,7 @@
   font-size: 14px!important;
   font-family: sans-serif;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .runbookStore-card-container {
   justify-content: center;
   }
