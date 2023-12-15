@@ -53,7 +53,7 @@ module.exports = {
       serif: ["Merriweather", "serif"],
     },
     fontSize: {
-      xs: "10px",
+      xs: "12px",
       sm: "14px",
       lh: "14px",
       md: "15px",                                                     

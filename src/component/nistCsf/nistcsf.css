@@ -57,7 +57,23 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  /* .nist-card {
+    width: 96%;
+  }
+  .nist-header p {
+    margin: 10px;
+  }
+  .vendor-runbook-container {
+    margin-left: 10px;
+  } */
+  .nist-card-container {
+    margin: 25px 0px 25px 10px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .nist-card {
     width: 96%;
   }

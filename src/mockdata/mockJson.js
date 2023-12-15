@@ -232,3 +232,148 @@ export const RUNBOOK_STORE_DATA = [
     nist_800_controls: "17",
   },
 ];
+
+
+export const NIST_CSF_POLICIES = [
+  {
+    id:1,
+    summary:{
+      category:"Identify",
+      totalPolicies: 17,
+    },
+    policies:[
+      {
+        category: "Asset Management",
+        policies: 5,
+      },
+      {
+        category: "Business Environment",
+        policies: 0,
+      },
+      {
+        category: "Governance",
+        policies: 0,
+      },
+      {
+        category: "Risk Assessment",
+        policies: 0,
+      },
+      {
+        category: "Risk Management Strategy",
+        policies: 5,
+      },
+      {
+        category: "Supply Chain Risk Management",
+        policies: 7,
+      },
+    ]
+  },
+  {
+    id:2,
+    summary:{
+      category:"Protect",
+      totalPolicies: 100,
+    },
+    policies:[
+      {
+        category: "Identity Management & Access Control",
+        policies: 20,
+      },
+      {
+        category: "Awareness and Training",
+        policies: 25,
+      },
+      {
+        category: "Data Security",
+        policies: 26,
+      },
+      {
+        category: "Information Protection Processes & Procedures",
+        policies: 28,
+      },
+      {
+        category: "Maintenance",
+        policies: 3,
+      },
+      {
+        category: "Protective Technology",
+        policies: 18,
+      },
+    ]
+  },
+  {
+    id:3,
+    summary:{
+      category:"Detect",
+      totalPolicies: 13,
+    },
+    policies:[
+      {
+        category: "Anomalies and Events",
+        policies: 4,
+      },
+      {
+        category: "Security Continuous Monitoring",
+        policies: 5,
+      },
+      {
+        category: "Detection Processes",
+        policies: 4,
+      },
+      
+    ]
+  },
+  {
+    id:4,
+    summary:{
+      category:"Respond",
+      totalPolicies: 11,
+    },
+    policies:[
+      {
+        category: "Response Planning",
+        policies: 3,
+      },
+      {
+        category: "Communications",
+        policies: 2,
+      },
+      {
+        category: "Analysis",
+        policies: 4,
+      },
+      {
+        category: "Mitigation",
+        policies: 0,
+      },
+      {
+        category: "Improvements",
+        policies: 2,
+      },
+      
+    ]
+  },
+  {
+    id:5,
+    summary:{
+      category:"Recover",
+      totalPolicies: 9,
+    },
+    policies:[
+      {
+        category: "Recovery Planning",
+        policies: 3,
+      },
+      {
+        category: "Improvements",
+        policies: 2,
+      },
+      {
+        category: "Communications",
+        policies: 4,
+      },
+      
+    ]
+  },
+  
+]

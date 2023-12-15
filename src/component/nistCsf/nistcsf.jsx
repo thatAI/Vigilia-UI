@@ -50,7 +50,7 @@ const Nistcsf = () => {
                           flexDirection: "column",
                         }}
                       >
-                        <p className="text-sm">{data.summary.policies}</p>
+                        <p className="text-sm lg:text-xs">{data.summary.policies}</p>
                         <span className="text-sm lg:text-xs">Policies</span>
                       </div>
                     </Col>
@@ -63,7 +63,7 @@ const Nistcsf = () => {
                           flexDirection: "column",
                         }}
                       >
-                        <p className="text-sm">{data.summary.runbooks} </p>
+                        <p className="text-sm lg:text-xs">{data.summary.runbooks} </p>
                         <span className="text-sm lg:text-xs">Runbooks</span>
                       </div>
                     </Col>
@@ -77,7 +77,7 @@ const Nistcsf = () => {
                         }}
                       >
                         <p
-                          className="text-sm"
+                          className="text-sm lg:text-xs"
                           style={{
                             color: getColorByRange(data.summary.compilance),
                           }}
@@ -108,14 +108,14 @@ const Nistcsf = () => {
                 <Col xl={14} lg={16} md={18} xs={18} sm={18}>
                   <Row>
                     <Col span={8}>
-                      <p className="text-sm">{data.policy} </p>
+                      <p className="text-sm lg:text-xs">{data.policy} </p>
                     </Col>
                     <Col span={8}>
-                      <p className="text-sm">{data.runbook} </p>
+                      <p className="text-sm lg:text-xs">{data.runbook} </p>
                     </Col>
                     <Col span={8}>
                       <p
-                        className="text-sm"
+                        className="text-sm lg:text-xs"
                         style={{ color: getColorByRange(data?.compilance) }}
                       >
                         {data?.compilance === 0 ? "NA" : `${data?.compilance}%`}{" "}

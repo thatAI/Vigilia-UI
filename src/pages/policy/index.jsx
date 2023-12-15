@@ -1,9 +1,9 @@
 import React from "react";
-
 import "./index.css";
+import Policy from "../../component/policy/policy";
 
 const Index = () => {
-  return <p className="font-primary text-2xl">Coming soon</p>;
+  return <Policy/>;
 };
 
 export default Index;
