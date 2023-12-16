@@ -1,7 +1,8 @@
-import { Button, Card, Checkbox, Dropdown, Input, Menu, Row, Table } from "antd";
+import { Button, Card, Checkbox, Dropdown, Input, Menu, Row, Space, Table } from "antd";
 import React from "react";
 import "./runbookStore.css";
 import { SearchOutlined } from "@ant-design/icons";
+import { DownloadOutlined } from '@ant-design/icons';
 import { RUNBOOK_STORE_DATA } from "../../mockdata/mockJson";
 const RunbookStore = () => {
   const columns = [
@@ -39,6 +40,15 @@ const RunbookStore = () => {
       title: "NIST 800-53 Controls",
       dataIndex: "nist_800_controls",
       key: "nist_800_controls",
+    },
+    {
+      title: "",
+      key: "download",
+      render: (text, record) => (
+        <Space size="middle">
+          <DownloadOutlined style={{fontSize:'20px' , cursor:'pointer' , width:"25px"}}/>
+        </Space>
+      ),
     },
   ];
   const menu = (

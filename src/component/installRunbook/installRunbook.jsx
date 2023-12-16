@@ -1,4 +1,4 @@
-import { Card, Input, Row, Table } from "antd";
+import { Card, Input, Row, Space, Table } from "antd";
 import React from "react";
 import "./installRunbook.css";
 import { SearchOutlined } from "@ant-design/icons";
@@ -41,6 +41,15 @@ const InstallRunbook = () => {
       dataIndex: "nist_800_controls",
       key: "nist_800_controls",
     },
+    {
+        title: "",
+        key: "uninstall",
+        render: (text, record) => (
+          <Space size="middle" >
+            <img  src="/images/uninstall.png" alt="uninstall-icon" height={30} width={25}  style={{cursor:'pointer'}} />
+          </Space>
+        ),
+      },
   ];
   return (
     <div className="install-runbook-container">
