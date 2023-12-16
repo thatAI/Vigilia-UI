@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { MenuOutlined } from "@ant-design/icons";
-import {getUserinfoByPath} from "../../utils"
-const Navbar = ({  hamburgerClicked }) => {
+import { useLocation } from "react-router-dom";
+import { getUserinfoByPath } from "../../utils"
+const Navbar = ({ hamburgerClicked }) => {
+  const location = useLocation();
   const hamburgerHandler = () => {
     hamburgerClicked();
   };
-  const userInfo = getUserinfoByPath(window.location.pathname);
+
+  const [userInfo, setUserInfo] = useState(getUserinfoByPath(location.pathname));
+  
+  useEffect(() => {
+    setUserInfo(getUserinfoByPath(location.pathname))
+  }, [location.pathname]);
   return (
     <div className="navbar-container bg-navbar">
       <img src="/images/VTI_Logo_Turquoise_v2.png" alt="logoImage" className="navbar-logo-image" />
