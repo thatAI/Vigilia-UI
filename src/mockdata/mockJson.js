@@ -377,3 +377,44 @@ export const NIST_CSF_POLICIES = [
   },
   
 ]
+
+
+export const INSTALL_RUNBOOK_DATA = [
+  {
+    name: "AWS S3 ",
+    version: "v1.1-16_Oct_2023",
+    cves: "2",
+    processes: "28",
+    nist_csf_policies: "17",
+    nist_csf_sub_categories: "16",
+    nist_800_controls: "18",
+  },
+ 
+  {
+    name: "AWS RDS",
+    version: "v1.1-17_Oct_2023",
+    cves: "3",
+    processes: "31",
+    nist_csf_policies: "19",
+    nist_csf_sub_categories: "21",
+    nist_800_controls: "14",
+  },
+  {
+    name: "AWS EC2",
+    version: "v1.1-18_Oct_2023",
+    cves: "1",
+    processes: "12",
+    nist_csf_policies: "8",
+    nist_csf_sub_categories: "24",
+    nist_800_controls: "27",
+  },
+  {
+    name: "AWS IAM",
+    version: "v2.0-19_Oct_2023",
+    cves: "1",
+    processes: "32",
+    nist_csf_policies: "25",
+    nist_csf_sub_categories: "8",
+    nist_800_controls: "23",
+  },
+];

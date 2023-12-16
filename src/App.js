@@ -30,7 +30,7 @@ function App() {
             >
               <LeftSider routeSidebarHandler={routeSidebarHandler} />
             </Sider>
-            <Content className="bg-primary content">
+            <Content className={`bg-primary content ${isLeftSiderHidden ? "notSiderVisible":"siderVisible"}`}>
               <RoutesHandler />
             </Content>
           </Layout>

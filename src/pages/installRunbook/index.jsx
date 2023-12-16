@@ -1,8 +1,9 @@
 import React from "react";
 import "./index.css";
+import InstallRunbook from "../../component/installRunbook/installRunbook";
 
 const Index = () => {
-  return <p className="font-primary text-2xl">Coming soon</p>;
+  return <InstallRunbook/>;
 };
 
 export default Index;

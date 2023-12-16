@@ -1,71 +1,64 @@
-.runbook-container{
+.install-runbook-container{
     margin: 25px;
     margin-top: 10px;
 }
-.runbook-header{
+.install-runbook-header{
   min-height: 47px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 
 }
-.runbookStore-card-container {
+.install-runbook-card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-.runbookStoreCard {
+.install-runbookCard {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 235px;
   font-weight: 700;
 }
-.runbookStoreCard .ant-card-body {
+.install-runbookCard .ant-card-body {
   padding: 10px !important;
 }
-.import-search-container {
-  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+.install-search-container {
+    width: 235px;
   padding: 0px;
   padding-top: 5px;
   display: flex;
   justify-content: space-between;
 }
-.import-search-container .ant-btn:hover{
-    color: white!important;
-    background-color: #2ebce3!important;
-}
-.search-runbooks .ant-input{
+
+.search-install-runbooks .ant-input{
     font-weight: 700!important;
 }
-.runbookStore-data-header {
+.install-runbook-data-header {
   font-weight: bold;
   border: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
 }
-.runbookStore-data-body {
+.install-runbook-data-body {
   border: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
 }
-.runbook-table .ant-table-thead th {
+.install-runbook-table .ant-table-thead th {
   background-color: #f9f9f9 !important;
 }
-.runbook-table{
+.install-runbook-table{
  padding-top: 5px;
 }
-.runbook-table .ant-table-cell {
+.install-runbook-table .ant-table-cell {
   font-size: 14px!important;
   font-family: sans-serif;
 }
 @media (max-width: 1000px) {
+
   
-  .import-search-container {
-    gap: 10px;
-  }
 }
 @media (max-width: 768px) {
-  .runbookStore-card-container {
+  .install-runbook-card-container {
   justify-content: center;
   }
-  .import-search-container {
-    gap: 10px;
-  }
+ 
 }
