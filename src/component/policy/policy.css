@@ -14,10 +14,10 @@
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
   }
   .policy-card {
-    width: 47%;
+    width: 30%;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
   .policy-card-container .ant-card-head {

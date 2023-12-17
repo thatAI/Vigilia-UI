@@ -26,8 +26,8 @@ const Policy = () => {
                       {data.summary.category}
                     </p>
                   </Col>
-                  <Col span={12} style={{ textAlign: "center" }}>
-                    <p className="text-sm lg:text-xs">{data.summary.totalPolicies}</p>
+                  <Col span={12} style={{ textAlign: "right" }}>
+                    <p className="text-sm lg:text-xs mr-3">{data.summary.totalPolicies}</p>
                     <span className="text-sm lg:text-xs">Policies</span>
                   </Col>
                 </Row>
@@ -39,8 +39,8 @@ const Policy = () => {
                   <Col span={12} align="left">
                     <p className="text-sm  lg:text-xs">{data.category}</p>
                   </Col>
-                  <Col span={12} style={{ textAlign: "center" }}>
-                    <p className="text-sm lg:text-xs">{data.policies} </p>
+                  <Col span={12} style={{ textAlign: "right" }}>
+                    <p className="text-sm lg:text-xs mr-3">{data.policies} </p>
                   </Col>
                 </Row>
               ))}
