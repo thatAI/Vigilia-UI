@@ -19,9 +19,13 @@ export function getUserinfoByPath(currentPath) {
     return { name: "Lisa Audrey", role: "CISO" };
   } else if (currentPath === "/cves") {
     return { name: "Lisa Audrey", role: "CISO" };
-  } else if (currentPath ==="/policy") {
+  } else if (currentPath === "/policy") {
     return { name: "Lisa Audrey", role: "CISO" };
+
+    // } else if (currentPath === "/runbook" && role =="operator") {
+    //   return { name: "Ken Williams", role: "Operator" };
   } else if (currentPath === "/runbook") {
-    return { name: "Ken Williams", role: "Operator" };
+    return { name: "Mark Wood", role: "Admin" };
   }
+
 }

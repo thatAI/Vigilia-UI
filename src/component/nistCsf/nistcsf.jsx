@@ -79,14 +79,14 @@ const Nistcsf = () => {
                         <p
                           className="text-sm lg:text-xs"
                           style={{
-                            color: getColorByRange(data.summary.compilance),
+                            color: getColorByRange(data.summary.Compliance),
                           }}
                         >
-                          {data.summary.compilance}%{" "}
+                          {data.summary.Compliance}%{" "}
                         </p>
                         <span
                           style={{
-                            color: getColorByRange(data.summary.compilance),
+                            color: getColorByRange(data.summary.Compliance),
                           }}
                           className="text-sm lg:text-xs"
                         >
@@ -116,9 +116,9 @@ const Nistcsf = () => {
                     <Col span={8}>
                       <p
                         className="text-sm lg:text-xs"
-                        style={{ color: getColorByRange(data?.compilance) }}
+                        style={{ color: getColorByRange(data?.Compliance) }}
                       >
-                        {data?.compilance === 0 ? "NA" : `${data?.compilance}%`}{" "}
+                        {data?.Compliance === 0 ? "NA" : `${data?.Compliance}%`}{" "}
                       </p>
                     </Col>
                   </Row>

@@ -54,7 +54,7 @@ const InstallRunbook = () => {
   return (
     <div className="install-runbook-container">
       <Row className="bg-priamry font-primary install-runbook-header">
-        <p className="text-xl font-sans">Installed Runbook</p>
+        <p className="text-xl font-sans">Installed Runbooks</p>
       </Row>
       <Row className="install-runbook-card-container">
         <Card className="install-runbookCard">
@@ -71,7 +71,7 @@ const InstallRunbook = () => {
           <p className="text-3xl" style={{ color: "#e1ad01" }}>
             76%
           </p>
-          <p className="text-lh">Compilance</p>
+          <p className="text-lh">Compliance</p>
         </Card>
       </Row>
 
