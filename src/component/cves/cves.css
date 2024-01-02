@@ -1,0 +1,29 @@
+.cves-container{
+    margin: 25px;
+    margin-top: 10px;
+}
+.cves-header{
+    min-height: 47px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.cves-filters-button-category{
+    display: flex;
+    gap: 20px;
+    padding : 10px;
+}
+.cves-filters-button-category
+    .ant-btn:hover{
+    color: white!important;
+    background-color: #2ebce3!important;
+}
+.cves-category-filters-button-category{
+    display: flex;
+  justify-content: space-between;
+    padding : 10px;
+}
+.cves-category-filters-button-category  .ant-btn:hover{
+    color: white!important;
+    background-color: #2ebce3!important;
+}

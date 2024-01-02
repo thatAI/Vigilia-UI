@@ -4,6 +4,7 @@ import "./runbookStore.css";
 import { SearchOutlined } from "@ant-design/icons";
 import { DownloadOutlined } from '@ant-design/icons';
 import { RUNBOOK_STORE_DATA } from "../../mockdata/mockJson";
+import BreadcrumbComponent from "../breadcrumb/breadcrumb";
 const RunbookStore = () => {
   const columns = [
     {
@@ -84,7 +85,7 @@ const RunbookStore = () => {
   return (
     <div className="runbook-container">
        <Row className="bg-priamry font-primary runbook-header">
-        <p className="text-xl font-sans">Runbook Store</p>
+       <BreadcrumbComponent/>
       </Row>
       <Row className="runbookStore-card-container">
         <Card className="runbookStoreCard">

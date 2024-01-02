@@ -3,13 +3,21 @@ import React from "react";
 import "./installRunbook.css";
 import { SearchOutlined } from "@ant-design/icons";
 import { INSTALL_RUNBOOK_DATA } from "../../mockdata/mockJson";
+import BreadcrumbComponent from "../breadcrumb/breadcrumb";
+import { useNavigate } from "react-router-dom";
 
 const InstallRunbook = () => {
+  const navigate = useNavigate();
   const columns = [
     {
       title: "Name",
       dataIndex: "name",
-      key: "name",
+      render: (text, record) => (
+        <Space size="middle" >
+         
+        <a  onClick={()=>navigate(`/runbook/${record?.id}`)}> <p>{text}</p> </a>
+        </Space>
+      ),
     },
     {
       title: "Version",
@@ -54,7 +62,7 @@ const InstallRunbook = () => {
   return (
     <div className="install-runbook-container">
       <Row className="bg-priamry font-primary install-runbook-header">
-        <p className="text-xl font-sans">Installed Runbooks</p>
+        <BreadcrumbComponent/>
       </Row>
       <Row className="install-runbook-card-container">
         <Card className="install-runbookCard">

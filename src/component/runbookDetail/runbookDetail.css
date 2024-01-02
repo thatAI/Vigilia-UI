@@ -1,0 +1,18 @@
+.runbook-detail-container {
+  margin: 25px;
+  margin-top: 10px;
+}
+.runbook-detail-header {
+  min-height: 47px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.runbook-detail-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.runbook-detail-card {
+  width: 150px;
+}

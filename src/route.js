@@ -7,7 +7,7 @@ import Dashboard from "./pages/installRunbook";
 import Runbook from "./pages/runbook";
 import Policy from "./pages/policy";
 import Cves from "./pages/cves";
-
+import RunbookDetail from "./pages/runbookDetail";
 const RoutesHandler = () => {
   return (
     <Routes>
@@ -16,6 +16,7 @@ const RoutesHandler = () => {
       <Route path="/" element={<Runbook />} />
       <Route path="/cves" element={<Cves />} />
       <Route path="/policy" element={<Policy />} />
+      <Route path="/runbook/:id" element={<RunbookDetail />} />
     </Routes>
   );
 };

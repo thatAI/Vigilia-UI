@@ -2,12 +2,13 @@ import React from "react";
 import "./policy.css";
 import { NIST_CSF_POLICIES } from "../../mockdata/mockJson";
 import { Card, Col, Row } from "antd";
+import BreadcrumbComponent from "../breadcrumb/breadcrumb";
 const Policy = () => {
   return (
     <div className="policy-container">
       
         <Row className="bg-priamry font-primary policy-header">
-          <p className="text-xl font-sans">NIST CSF Policies</p>
+        <BreadcrumbComponent/>
         </Row>
         <Row className="policy-card-container">
           {NIST_CSF_POLICIES.map((data, index) => (

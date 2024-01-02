@@ -3,11 +3,12 @@ import React from "react";
 import "./nistcsf.css";
 import { NIST_MOCK_DATA } from "../../mockdata/mockJson";
 import { getColorByRange } from "../../utils";
+import BreadcrumbComponent from "../breadcrumb/breadcrumb";
 const Nistcsf = () => {
   return (
     <Row className="nist-container">
       <Row className="bg-priamry font-primary nist-header">
-        <p className="text-xl">NIST Cybersecurity Framework</p>
+      <BreadcrumbComponent/>
       </Row>
       <Row className="vendor-runbook-container">
         <div className="vendor-runbook p-1 border-primary text-base font-secondary">
