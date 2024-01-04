@@ -13,7 +13,7 @@ import { useEffect } from "react";
 const { Sider, Content } = Layout;
 function App() {
   const [isLeftSiderHidden, setisLeftSiderHidden] = useState(false);
-  const [pathname, setPathname] = useState(false);
+  const [isRightSide, setIsRightSide] = useState(false);
   const hamburgerClicked = () => {
     setisLeftSiderHidden(!isLeftSiderHidden);
   };
@@ -22,7 +22,7 @@ function App() {
   };
 
   const IsRightSiderVisible = (value) => {
-    setPathname(value);
+    setIsRightSide(value);
   };
 
   return (
@@ -45,7 +45,7 @@ function App() {
             >
               <RoutesHandler IsRightSiderVisible={IsRightSiderVisible} />
             </Content>
-            {pathname && (
+            {isRightSide && (
               <Sider className="sider-primary sider right-sider">
                 <RightSider />
               </Sider>
