@@ -6,6 +6,7 @@ const LeftSider = ({ routeSidebarHandler }) => {
   const navigate = useNavigate();
   const [active, setActive] = useState(window.location.pathname);
   const activeClassHandlder = (activename) => {
+    console.log(activename);
     switch (activename) {
       case "dashboard":
         navigate("/runbook");
@@ -138,7 +139,7 @@ const LeftSider = ({ routeSidebarHandler }) => {
       </div>
       <div
         className={`sider-child-div sider-child-primary font-default ${
-          active === "runbook/1" ? "active" : ""
+          active === "/runbook/1" ? "active" : ""
         }`}
         onClick={() => activeClassHandlder("runbook/1")}
       >
@@ -148,7 +149,7 @@ const LeftSider = ({ routeSidebarHandler }) => {
           height="19"
           viewBox="0 0 25 27"
           className={`font-default ${
-            active === `runbook/1` ? "active-icons" : ""
+            active === `/runbook/1` ? "active-icons" : ""
           }`}
         >
           <g clip-path="url(#clip0_206_1340)">
