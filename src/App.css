@@ -1,5 +1,4 @@
 .content {
-  min-height: 90vh;
   text-align: center;
   padding-left: 10px;
 }
@@ -7,6 +6,16 @@
   text-align: center;
   height: auto;
 }
+ol {
+  list-style: num;
+  
+}
+.right-sider .ant-layout-sider-children {
+  display: flex;
+ 
+ 
+}
+
 @media (max-width: 900px) {
   .siderVisible {
     display: block;

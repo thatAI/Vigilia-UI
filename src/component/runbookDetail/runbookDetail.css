@@ -12,7 +12,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
 }
 .runbook-detail-card {
-  width: 150px;
+  width: 175px;
 }

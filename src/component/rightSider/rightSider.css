@@ -1,0 +1,8 @@
+.right-sider-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+  }

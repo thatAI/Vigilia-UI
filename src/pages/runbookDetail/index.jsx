@@ -7,28 +7,16 @@ import { useState } from "react";
 import GenreicModal from "../../component/modal/modal";
 import "./index.css";
 import { Empty } from "antd";
-const Index = () => {
+import { useEffect } from "react";
+const Index = ({isSider}) => {
   const [runbookProcessId, setRunbookProcessId] = useState(21);
-
+  useEffect(()=>{
+    isSider(true)
+  },[])
   return (
-    <div style={{ display: "flex" }}>
+    <Row style={{ display: "flex"  }}>
       <RunbookDetail runbookProcessId={runbookProcessId} />
-      <Sider className="sider-primary sider right-sider">
-        <Col className="mt-1" style={{display:'flex', flexDirection:'column', gap:'10px'}}>
-          <p className="font-sans text-sm ">{RUNBOOK_DETAIL_DESCRITPTION.runbook.name}</p>
-          <p className="font-sans text-sm font-primary">{RUNBOOK_DETAIL_DESCRITPTION.runbook.version}</p>
-        </Col>
-        <Empty description={false} />
-        <Row style={{gap:"10px"}}>
-          <GenreicModal
-            buttonText={"Automation"}
-            modalTitle={"Automation"}
-            modalContent={"Content"}
-          />
-          <Button>Delete</Button>
-        </Row>
-      </Sider>
-    </div>
+    </Row>
   );
 };
 

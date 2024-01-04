@@ -26,9 +26,7 @@ export function getUserinfoByPath(currentPath) {
     //   return { name: "Ken Williams", role: "Operator" };
   } else if (currentPath === "/runbook") {
     return { name: "Mark Wood", role: "Admin" };
+  } else if (currentPath === `/runbook/1`) {
+    return { name: "Ken Williams", role: "Operator" };
   }
- else if (currentPath === "/runbook/:id") {
-    return { name: "Mark Wood", role: "Admin" };
-  }
-
 }

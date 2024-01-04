@@ -6,7 +6,6 @@ const LeftSider = ({ routeSidebarHandler }) => {
   const navigate = useNavigate();
   const [active, setActive] = useState(window.location.pathname);
   const activeClassHandlder = (activename) => {
-    console.log(activename);
     switch (activename) {
       case "dashboard":
         navigate("/runbook");
