@@ -29,10 +29,7 @@
   display: flex;
   justify-content: space-between;
 }
-.import-search-container .ant-btn:hover{
-    color: white!important;
-    background-color: #2ebce3!important;
-}
+
 .search-runbooks .ant-input{
     font-weight: 700!important;
 }

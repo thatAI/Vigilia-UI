@@ -13,17 +13,9 @@
     gap: 20px;
     padding : 10px;
 }
-.cves-filters-button-category
-    .ant-btn:hover{
-    color: white!important;
-    background-color: #2ebce3!important;
-}
+
 .cves-category-filters-button-category{
     display: flex;
   justify-content: space-between;
     padding : 10px;
-}
-.cves-category-filters-button-category  .ant-btn:hover{
-    color: white!important;
-    background-color: #2ebce3!important;
 }

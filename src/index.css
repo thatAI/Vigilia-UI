@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: sans-serif !important;
+}
 
-body, html , p , h1, h2, h3, h4, h5, h6, span{ 
-    font-family: sans-serif!important;
-  }
+.ant-btn-primary {
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.88);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+.ant-btn:hover {
+  color: white !important;
+  background-color: #2ebce3 !important;
+}

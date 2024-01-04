@@ -423,7 +423,7 @@ export const RUNBOOK_DETAIL_DESCRITPTION = {
     name: "AWS S3 HRO Runbook",
     impact:
       "Data Breaches: S3 buckets that are misconfigured can be left publicly accessible, leading to unauthorized access and potential disclosure of sensitive data. This could result in financial losses, reputational damage, and potential legal liabilities.\nData Loss: Improperly configured backup and retention policies can lead to unintentional data deletion or loss.\nData Corruption: Without the proper access controls, data integrity can be compromised either accidentally or maliciously.\nRegulatory and Compliance Issues: Organizations subject to regulations may face penalties, fines, or other legal actions for not adhering to required standards.\nLoss of Trust: Stakeholders, including customers and partners, may lose trust in an organization that fails to secure its data adequately.\nOperational Disruptions: Misconfigurations can disrupt services and business operations, leading to financial loss and increased operational costs.\nFinancial Costs: Remediation of issues after they arise is often more expensive than proactive measures. Organizations might have to invest in emergency response, forensic investigations, public relations campaigns, and other unexpected expenses.\nLegal Implications: If sensitive data such as personal identifiable information (PII) is exposed due to misconfigurations, organizations could face lawsuits.\nReputational Damage: Negative press coverage from a data leak or breach can harm an organization's reputation, potentially leading to loss of customers or business opportunities.\nAuditing Failures: Failure to align with NIST guidelines could lead to unfavorable results during security audits, which can have cascading effects, including loss of contracts or business.\nIncreased Vulnerability: Not following the framework can lead to vulnerabilities that cybercriminals can exploit, increasing the chances of cyberattacks.\nLoss of Competitive Advantage: If business strategies, proprietary algorithms, or trade secrets stored in S3 are exposed, it might give competitors an unfair advantage.\n\n",
-    version: "v3",
+    version: "v1.1-16_Oct_2023",
     runbookid: 2,
     isinstalled: true,
     cloudvendorid: "AWS",
@@ -564,8 +564,62 @@ export const RUNBOOK_DETAIL_DESCRITPTION = {
     },
     {
       name: "Bucket risk profile is the highest risk profile of any asset (object) in the bucket",
-      steps:
-        'Inventory Assets within the Bucket:\nUse the ListObjects API call to retrieve a list of all objects within the S3 bucket.\nHRO Check Current State: Ensure an up-to-date inventory of all assets in the bucket.\nDetermine Risk Profile of Each Object:\nHRO Proficiency Test: Evaluate an operator\'s capability to assess and tag assets based on risk correctly.\nHRO Reminder Prompt: "Always refer to company guidelines or criteria when determining the risk profile of an asset."\nThis step might involve a custom process or solution since AWS does not inherently assign risk profiles to individual objects. If you have a tagging mechanism or metadata attribute indicating risk for each object, you can fetch it using the AWS SDK.\nEvaluate the Highest Risk Profile:\nHRO Reminder Prompt: "Always consider the impact, likelihood, and vulnerability attributes of each asset during this evaluation."\nIterate over each object\'s risk profile (from metadata or tags) to identify the highest risk profile among all objects in the bucket.\nApply Highest Risk Profile Settings to Bucket:\nHRO Preparatory Operator Validation: Confirm that you are about to set the appropriate configurations and policies reflective of the highest risk profile.\nHRO Preparatory Watch Team Validation: Ensure that a second team or set of eyes has checked and validated the configurations before application.\nDepending on how you define and implement risk profiles, you will now apply the relevant configurations and policies to the S3 bucket. This typically involves setting up bucket policies, ACLs, and other AWS services integrations to enforce the highest risk profile settings.\nValidate Bucket Policies:\nUse the get_bucket_policy API call to retrieve the bucket\'s policy.\nAnalyze the policy to ensure that it aligns with the required highest risk profile.\nHRO Operator Validation: Confirm that the bucket policy matches the desired risk profile settings.\nHRO Watch Team Validation [required]: A mandatory secondary validation to confirm that the bucket policy is correctly configured.\nPeriodically Review and Adjust:\nSince the bucket\'s content can change over time, regularly use the AWS API to review object risk profiles and adjust bucket settings as necessary.\nHRO Request Feedback: After each review, provide insights and recommendations for optimization.\nLogging and Monitoring:\nHRO Reminder Prompt: "Regularly review logs to detect anomalies or potential security breaches."\nEnable AWS CloudTrail for S3 bucket monitoring.\nEnsure that AWS Config is set up to monitor S3 bucket settings, ensuring compliance with the highest risk profile.\nNotifications:\nUse S3 bucket notifications and AWS Lambda to get alerted when high-risk assets are added to the bucket. This will enable immediate review and potential reconfiguration.\nHRO Watch Team Validation: Ensure that notifications are operational and the team is responsive to these alerts.\nDocumentation:\nHRO Reminder Prompt: "Keep documentation clear, detailed, and easily accessible for future reference and auditing purposes."\nDocument the bucket\'s risk profile and relevant configurations for auditing and governance purposes.\n\n',
+      steps: `<ol>
+      <li>Inventory Assets within the Bucket:<ol>
+              <li>Use the <em>ListObjects</em> API call to retrieve a list of all objects within the S3 bucket.</li>
+              <li><strong>HRO Check Current State</strong>: Ensure an up-to-date inventory of all assets in the bucket.
+              </li>
+          </ol>
+      </li>
+      <li>Determine Risk Profile of Each Object:</li>
+      <li><strong>HRO Proficiency Test</strong>: Evaluate an operator's capability to assess and tag assets based on risk
+          correctly.</li>
+      <li><strong>HRO Reminder Prompt</strong>: &quot;Always refer to company guidelines or criteria when determining the
+          risk profile of an asset.&quot;</li>
+      <li>This step might involve a custom process or solution since AWS does not inherently assign risk profiles to
+          individual objects. If you have a tagging mechanism or metadata attribute indicating risk for each object, you
+          can fetch it using the AWS SDK.</li>
+      <li>Evaluate the Highest Risk Profile:</li>
+      <li><strong>HRO Reminder Prompt:</strong> &quot;Always consider the impact, likelihood, and vulnerability attributes
+          of each asset during this evaluation.&quot;</li>
+      <li>Iterate over each object's risk profile (from metadata or tags) to identify the highest risk profile among all
+          objects in the bucket.</li>
+      <li>Apply Highest Risk Profile Settings to Bucket:</li>
+      <li><strong>HRO Preparatory Operator Validation</strong>: Confirm that you are about to set the appropriate
+          configurations and policies reflective of the highest risk profile.</li>
+      <li><strong>HRO Preparatory Watch Team Validation</strong>: Ensure that a second team or set of eyes has checked and
+          validated the configurations before application.</li>
+      <li>Depending on how you define and implement risk profiles, you will now apply the relevant configurations and
+          policies to the S3 bucket. This typically involves setting up bucket policies, ACLs, and other AWS services
+          integrations to enforce the highest risk profile settings.</li>
+      <li>Validate Bucket Policies:</li>
+      <li>Use the <em>get_bucket_policy</em> API call to retrieve the bucket's policy.</li>
+      <li>Analyze the policy to ensure that it aligns with the required highest risk profile.</li>
+      <li><strong>HRO Operator Validation</strong>: Confirm that the bucket policy matches the desired risk profile
+          settings.</li>
+      <li><strong>HRO Watch Team Validation [required]</strong>: A mandatory secondary validation to confirm that the
+          bucket policy is correctly configured.</li>
+      <li>Periodically Review and Adjust:</li>
+      <li>Since the bucket's content can change over time, regularly use the AWS API to review object risk profiles and
+          adjust bucket settings as necessary.</li>
+      <li><strong>HRO Request Feedback</strong>: After each review, provide insights and recommendations for optimization.
+      </li>
+      <li>Logging and Monitoring:</li>
+      <li><strong>HRO Reminder Prompt:</strong> &quot;Regularly review logs to detect anomalies or potential security
+          breaches.&quot;</li>
+      <li>Enable AWS CloudTrail for S3 bucket monitoring.</li>
+      <li>Ensure that AWS Config is set up to monitor S3 bucket settings, ensuring compliance with the highest risk
+          profile.</li>
+      <li>Notifications:</li>
+      <li>Use S3 bucket notifications and AWS Lambda to get alerted when high-risk assets are added to the bucket. This
+          will enable immediate review and potential reconfiguration.</li>
+      <li><strong>HRO Watch Team Validation</strong>: Ensure that notifications are operational and the team is responsive
+          to these alerts.</li>
+      <li>Documentation:</li>
+      <li><strong>HRO Reminder Prompt:</strong> &quot;Keep documentation clear, detailed, and easily accessible for future
+          reference and auditing purposes.&quot;</li>
+      <li>Document the bucket's risk profile and relevant configurations for auditing and governance purposes.</li>
+  </ol>`,
       impact:
         "Performance and Cost: While security is paramount, applying the highest risk profile settings and protections to all assets, including those with a lower risk profile, might introduce unnecessary performance hits and costs. Regularly reviewing and optimizing bucket configurations can help mitigate these challenges.\nUsability and Accessibility: Overly restrictive access might create barriers for legitimate users or services. It might be worthwhile to consider finer-grained access controls or segregation of assets, so high-risk data doesn't inadvertently limit access to low-risk data that should be more accessible.\nMaintenance and Management Overhead: The need to continually reassess buckets as new assets are added could introduce significant management overhead. Consider implementing tools or AWS services that can automate asset classification and the corresponding risk assessments.\nMitigation of Risk through Separation: If possible, high-risk assets should be isolated in their own buckets, and strict policies should be applied to only those buckets. This strategy helps avoid the potential consequences of an overly broad policy and keeps high-risk data separate from lower-risk data.\n\n",
       output: "",
