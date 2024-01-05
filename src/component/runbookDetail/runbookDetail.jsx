@@ -63,7 +63,7 @@ const RunbookDetail = ({ runbookProcessId }) => {
           },
         }}
         className="runbook-doc-viewer"
-        style={{ height: "60vh", marginTop: "10px" }}
+        style={{ height: "70vh", marginTop: "10px" }}
         documents={docs}
         pluginRenderers={DocViewerRenderers}
         onError={(err) => console.error("Document rendering error:", err)}
