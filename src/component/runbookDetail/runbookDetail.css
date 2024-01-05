@@ -1,6 +1,7 @@
 .runbook-detail-container {
   margin: 25px;
   margin-top: 10px;
+  width: 100%;
 }
 .runbook-detail-header {
   min-height: 47px;

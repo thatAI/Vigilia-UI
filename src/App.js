@@ -42,7 +42,7 @@ function App() {
               className={`bg-primary content ${
                 isLeftSiderHidden ? "notSiderVisible" : "siderVisible"
               }`}
-            >
+                          >
               <RoutesHandler IsRightSiderVisible={IsRightSiderVisible} />
             </Content>
             {isRightSide && (
