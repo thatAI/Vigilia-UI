@@ -16,35 +16,40 @@
   width: 100%;
 }
 .runbook-detail-card {
-  width: 175px;
+  width: 15%;
 }
-.runbook-doc-viewer{
-  height: 67vh!important;
-  margin-top: 10px; 
+.runbook-doc-viewer {
+  height: 67vh !important;
+  margin-top: 10px;
 }
- .add-delete-automation{
-  display: none;   
+.add-delete-automation {
+  display: none;
 }
-@media (max-width: 1000px) {
-  .runbook-doc-viewer{
-    height: 50vh!important;
-    margin-top: 10px; 
+@media (max-width: 1024px) {
+  .runbook-doc-viewer {
+    height: 50vh !important;
+    margin-top: 10px;
   }
-  .add-delete-automation{
+  .add-delete-automation {
     margin-top: 20px;
     display: flex;
-    gap:20px;
+    gap: 20px;
     justify-content: center;
+  }
+  .runbook-detail-card {
+    width: 20%;
   }
 }
 
 @media (max-width: 768px) {
- 
-  .runbook-doc-viewer{
-    height: 50vh!important;
-    margin-top: 10px; 
+  .runbook-doc-viewer {
+    height: 50vh !important;
+    margin-top: 10px;
   }
   .runbook-detail-card-container {
-   justify-content: center;
+    justify-content: center;
+  }
+  .runbook-detail-card {
+    width: 80%;
   }
 }

@@ -32,7 +32,7 @@
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hamburger-icon {
     display: block;
     font-size: 18px;
