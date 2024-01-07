@@ -6,3 +6,8 @@
     gap: 10px;
     padding-bottom: 10px;
   }
+  .modal-content-automation{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

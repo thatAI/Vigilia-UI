@@ -18,3 +18,24 @@
 .runbook-detail-card {
   width: 175px;
 }
+.runbook-doc-viewer{
+  height: 70vh!important;
+  margin-top: 10px; 
+}
+@media (max-width: 1000px) {
+  .runbook-doc-viewer{
+    height: 50vh!important;
+    margin-top: 10px; 
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .runbook-doc-viewer{
+    height: 50vh!important;
+    margin-top: 10px; 
+  }
+  .runbook-detail-card-container {
+   justify-content: center;
+  }
+}

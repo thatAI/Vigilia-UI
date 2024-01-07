@@ -38,4 +38,8 @@
     font-size: 18px;
     margin-top: 5px;
   }
+  .navbar-logo-image {
+    margin: 5px 10px;
+    height: 40px;
+  }
 }
