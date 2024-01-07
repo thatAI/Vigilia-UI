@@ -6,78 +6,9 @@ import { DownOutlined } from "@ant-design/icons";
 import GenreicModal from "../../component/modal/modal";
 import "./rightSider.css";
 import { Empty } from "antd";
+import ModalContent from  "../modal/modalContent"
 const RightSider = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [selectedAutomationOption, setSelectedAutomationOption] =
-    useState(null);
-  const handleMenuClick = (e) => {
-    setSelectedOption(e.domEvent.target.innerText);
-  };
-  const handleAutomationMenuClick = (e) => {
-    setSelectedAutomationOption(e.domEvent.target.innerText);
-  };
-  const items = RUNBOOK_DETAIL_DESCRITPTION.processes.map((process, index) => ({
-    label: process.name,
-    key: process.runbookprocessid,
-  }));
-  const automationItems = [
-    {
-      label: "AWS CLI",
-      key: '1',
-    },
-    {
-      label: "AWS Cloud Formation",
-      key: '2',
-    },
-  ];
-  const menuProps = {
-    items,
-    onClick: handleMenuClick,
-  };
-  const automationMenuProps = {
-    items: automationItems,
-    onClick: handleAutomationMenuClick,
-  };
-  const dropdownMenuStyle = {
-    maxHeight: "300px",
-    overflowY: "auto",
-    maxWidth: "200px",
-  };
-
-  const modalContent = (
-    <div className="modal-content-automation">
-      <div>
-        <Dropdown menu={menuProps} overlayStyle={dropdownMenuStyle}>
-          <Button
-            style={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            {selectedOption || "Select processes to add automations"}
-            <DownOutlined />
-          </Button>
-        </Dropdown>
-      </div>
-      <div>
-        <Dropdown menu={automationMenuProps} overlayStyle={dropdownMenuStyle}>
-          <Button
-            style={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            {selectedAutomationOption || "Select Automation"}
-            <DownOutlined />
-          </Button>
-        </Dropdown>
-      </div>
-    </div>
-  );
+ 
   return (
     <div className="right-sider-container">
       <Col
@@ -96,7 +27,7 @@ const RightSider = () => {
         <GenreicModal
           buttonText={"Automation"}
           modalTitle={"Automation"}
-          modalContent={modalContent}
+          modalContent={<ModalContent/>}
         />
         <Button>Delete</Button>
       </Row>

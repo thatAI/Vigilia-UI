@@ -5,6 +5,9 @@ import { RUNBOOK_DETAIL_DESCRITPTION } from "../../mockdata/mockJson";
 import { Button, Card, Col, Row } from "antd";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import { useState } from "react";
+import GenreicModal from "../modal/modal";
+import ModalContent from  "../modal/modalContent"
+
 const RunbookDetail = ({ runbookProcessId }) => {
   const docs = [
     {
@@ -53,6 +56,15 @@ const RunbookDetail = ({ runbookProcessId }) => {
           <p className="text-3xl">28%</p>
           <p className="text-lh">of Total CVEs</p>
         </Card>
+      </Row>
+      <Row className="add-delete-automation">
+      <GenreicModal
+          buttonText={"Add Automation"}
+          modalTitle={"Automation"}
+          modalContent={<ModalContent/>}
+
+        />
+        <Button>Delete</Button>
       </Row>
       <DocViewer
         config={{

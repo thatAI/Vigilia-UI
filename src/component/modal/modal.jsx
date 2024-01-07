@@ -1,8 +1,7 @@
-// ModalButton.js
-
 import React, { useState } from "react";
 import { Button, Modal } from "antd";
-import './modal.css';
+import "./modal.css";
+
 const GenreicModal = ({ buttonText, modalTitle, modalContent }) => {
   const [openModal, setOpenModal] = useState(false);
   const showModal = () => {
@@ -17,7 +16,11 @@ const GenreicModal = ({ buttonText, modalTitle, modalContent }) => {
   };
   return (
     <div className="modal-class">
-      <Button type="primary" className="btn-primary"  onClick={() => showModal()}>
+      <Button
+        type="primary"
+        className="btn-primary"
+        onClick={() => showModal()}
+      >
         {buttonText}
       </Button>
       <Modal
