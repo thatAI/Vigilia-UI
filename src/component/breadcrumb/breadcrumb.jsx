@@ -27,7 +27,7 @@ const BreadcrumbComponent = () => {
     },
     {
         path:`/runbook/${params?.id}`,
-        label:`Installed Runbooks / ${params?.id}`
+        label:`Installed Runbooks / AWS S3 HRO Runbook`
     }
   ];
   

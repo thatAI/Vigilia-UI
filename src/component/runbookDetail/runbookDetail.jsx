@@ -2,7 +2,7 @@ import React from "react";
 import BreadcrumbComponent from "../breadcrumb/breadcrumb";
 import "./runbookDetail.css";
 import { RUNBOOK_DETAIL_DESCRITPTION } from "../../mockdata/mockJson";
-import { Button, Card, Col, Row } from "antd";
+import { Button, Card, Col, Modal, Row } from "antd";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import { useState } from "react";
 import GenreicModal from "../modal/modal";
@@ -15,7 +15,18 @@ const RunbookDetail = ({ runbookProcessId }) => {
     },
     // {uri : require("../../docs/runbook.docx")}
   ];
-
+  const showDeleteConfirm = () => {
+    Modal.confirm({
+      title: 'Confirm Deletion',
+      content: 'Are you sure you want to delete this automation?',
+      onOk() {
+        
+      },
+      onCancel() {
+     
+      },
+    });
+  };
   return (
     <div className="runbook-detail-container">
       <Row className="bg-priamry font-primary runbook-detail-header">
@@ -64,7 +75,7 @@ const RunbookDetail = ({ runbookProcessId }) => {
           modalContent={<ModalContent/>}
 
         />
-        <Button>Delete</Button>
+        <Button type="primary" danger ghost onClick={showDeleteConfirm}>Delete</Button>
       </Row>
       <DocViewer
         config={{

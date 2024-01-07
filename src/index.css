@@ -24,3 +24,7 @@ span {
   color: white !important;
   background-color: #2ebce3 !important;
 }
+ .ant-btn-dangerous:hover{
+  color: white !important;
+  background-color: rgb(229, 149, 149)!important;
+}
