@@ -18,7 +18,7 @@ const RunbookDetail = ({ runbookProcessId }) => {
   const showDeleteConfirm = () => {
     Modal.confirm({
       title: 'Confirm Deletion',
-      content: 'Are you sure you want to delete this automation?',
+      content: 'Are you sure you want to delete this runbook?',
       onOk() {
         
       },
