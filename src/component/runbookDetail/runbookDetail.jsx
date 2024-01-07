@@ -6,7 +6,8 @@ import { Button, Card, Col, Modal, Row } from "antd";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 import { useState } from "react";
 import GenreicModal from "../modal/modal";
-import ModalContent from  "../modal/modalContent"
+import ModalContent from "../modal/modalContent";
+import AddAndRemoveRunbook from "../addAndRemoveRunbook/addAndRemoveRunbook";
 
 const RunbookDetail = ({ runbookProcessId }) => {
   const docs = [
@@ -17,14 +18,10 @@ const RunbookDetail = ({ runbookProcessId }) => {
   ];
   const showDeleteConfirm = () => {
     Modal.confirm({
-      title: 'Confirm Deletion',
-      content: 'Are you sure you want to delete this runbook?',
-      onOk() {
-        
-      },
-      onCancel() {
-     
-      },
+      title: "Confirm Deletion",
+      content: "Are you sure you want to delete this runbook?",
+      onOk() {},
+      onCancel() {},
     });
   };
   return (
@@ -69,13 +66,7 @@ const RunbookDetail = ({ runbookProcessId }) => {
         </Card>
       </Row>
       <Row className="add-delete-automation">
-      <GenreicModal
-          buttonText={"Add Automation"}
-          modalTitle={"Automation"}
-          modalContent={<ModalContent/>}
-
-        />
-        <Button type="primary" danger ghost onClick={showDeleteConfirm}>Delete</Button>
+        <AddAndRemoveRunbook />
       </Row>
       <DocViewer
         config={{
@@ -86,7 +77,6 @@ const RunbookDetail = ({ runbookProcessId }) => {
           },
         }}
         className="runbook-doc-viewer"
-        
         documents={docs}
         pluginRenderers={DocViewerRenderers}
         onError={(err) => console.error("Document rendering error:", err)}

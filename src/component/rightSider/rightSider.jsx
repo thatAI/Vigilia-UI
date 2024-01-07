@@ -6,20 +6,17 @@ import { DownOutlined } from "@ant-design/icons";
 import GenreicModal from "../../component/modal/modal";
 import "./rightSider.css";
 import { Empty } from "antd";
-import ModalContent from  "../modal/modalContent"
+import ModalContent from "../modal/modalContent";
+import AddAndRemoveRunbook from "../addAndRemoveRunbook/addAndRemoveRunbook";
 const RightSider = () => {
-    const showDeleteConfirm = () => {
-        Modal.confirm({
-          title: 'Confirm Deletion',
-          content: 'Are you sure you want to delete this runbook?',
-          onOk() {
-            
-          },
-          onCancel() {
-         
-          },
-        });
-      };
+  const showDeleteConfirm = () => {
+    Modal.confirm({
+      title: "Confirm Deletion",
+      content: "Are you sure you want to delete this runbook?",
+      onOk() {},
+      onCancel() {},
+    });
+  };
   return (
     <div className="right-sider-container">
       <Col
@@ -34,16 +31,10 @@ const RightSider = () => {
         </p>
       </Col>
       <Empty description={"Select automations for runbook"} />
-      <Row style={{ gap: "10px" }}>
-        <GenreicModal
-          buttonText={"Automation"}
-          modalTitle={"Automation"}
-          modalContent={<ModalContent/>}
-        />
-        <Button  type="primary" danger ghost onClick={showDeleteConfirm}>Delete</Button>
+      <Row>
+        <AddAndRemoveRunbook />
       </Row>
     </div>
-
   );
 };
 
