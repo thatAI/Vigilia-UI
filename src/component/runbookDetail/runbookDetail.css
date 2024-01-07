@@ -42,6 +42,9 @@
 }
 
 @media (max-width: 768px) {
+  .runbook-detail-header {
+    margin-bottom: 10px;
+  }
   .runbook-doc-viewer {
     height: 50vh !important;
     margin-top: 10px;
